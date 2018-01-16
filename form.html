@@ -10,12 +10,25 @@
 		label{
 			display:block;
 			margin:15px;
+			font-family:verdana;
 			
 			
 		}
 		
-		input{
-			border: 2px solid #3333ff;
+		input,select{
+			border: 1px solid #ff6e7f;
+			background-color:#FFC837;
+			padding:4px;
+			/*(width:50%;*/
+		}
+		body{
+			color:#fff;
+			background-color:#FF8008;
+		}
+		
+		legend{
+			padding: 0 20px;
+			font-family:verdana;
 		}
 
 	</style>
@@ -26,6 +39,10 @@
 
 
  <form action="/action_page.php">
+  <fieldset>
+	  <legend>
+	    <strong><fieldset>Form</fieldset></strong>
+	 </legend>
   <label>
 	  <b> First name:<br></b>
     <input type="text" name="firstname" value="First Name" maxlength="20">
@@ -328,8 +345,9 @@
 
 <br>
  <input type="submit" value="Submit">
-</form>
+
+
+ </fieldset></form>
 
 </body>
 </html>
-
